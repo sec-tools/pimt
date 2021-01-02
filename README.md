@@ -35,13 +35,11 @@ If you’re a company that is security-conscious, it’s pretty useful to see pu
 Just want to see the artifacts produced for a given domain? Use **quick mode (-q)** and only a single run will be performed, no diffs, and both the clean and annotated run files will be in the data/ folder.
 
 ## usage
-To get started, either build the dockerfile (easy) or install the recon tools in /opt and dependencies manually (takes more time). Then run either the container named **pimt** or if using the package without docker, run shell script **./pimt.sh**. The following are examples of how to use pimt.
+To get started, either build the dockerfile (easy) or install the recon tools in /opt and dependencies manually (takes more time). Then run either the container named **pimt** or if using the package without docker, run shell script **./pimt.sh** and the **./pimtweb.py** web server for browsable access to artifacts.
+
+The following are examples of how to use pimt.
 
 ### standalone
-**setup**
-
-Running the docker container is recommended as it automatically installs the tools for dependencies for you. For testing or debugging a standalone setup, install the the recon tools manually on the system and ensure they are available in /opt (see Dockerfile for other deps).
-
 **read domains and keywords from files and query every 60 seconds**
 ```
 > cat domains.txt
